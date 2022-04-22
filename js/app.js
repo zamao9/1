@@ -4,21 +4,33 @@ document.addEventListener('DOMContentLoaded', () => {
   let burger = document.querySelector('.burger'),
       navMenu = document.querySelector('.nav_menu'),
       navlink = document.querySelectorAll('.nav_link'),
+      clickBg = document.getElementById('click_bg'),
       body = document.getElementsByTagName('body');
 
   burger.addEventListener('click', (event) => {
     event.currentTarget.classList.toggle('active');
     navMenu.classList.toggle('active');
     body[0].classList.toggle('block');
+    clickBg.classList.toggle('active');
   });
 
+  /* CLOSE NAV ON BG CLICK */
+  clickBg.addEventListener('click', (event) => {
+    event.currentTarget.classList.remove('active');
+    burger.classList.remove('active');
+    navMenu.classList.remove('active');
+    body[0].classList.remove('block');
+  });
+
+  /* CLOSE NAV ON LINKS CLICK */
   for (let i=0; navlink.length > i; ++i) {
     navlink[i].addEventListener('click', (event) => {
       event.preventDefault();
       navMenu.classList.remove('active');
       body[0].classList.remove('block');
-      burger.classList.remove('active');
-    })
+      burger.classList.remove('active'); 
+      clickBg.classList.remove('active');
+  })
   };
 
 
