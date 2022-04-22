@@ -16,7 +16,7 @@
 <body>
   
   <!--INTRO-->
-  <div class="intro">
+  <div class="intro" id="intro">
 
     <header class="header">
       <div class="header_content">
@@ -27,6 +27,17 @@
           <div class="burger_items"></div>
         </div>
       </div>
+
+      <div class="nav_menu">
+        <ul>
+          <li><a class="nav_link" href="#" data-scroll="#hello" data-section="hello">hello</a></li>
+          <li><a class="nav_link" href="#" data-section="">qwwqrqw</a></li>
+          <li><a class="nav_link" href="#" data-section="">qwrrqwqw</a></li>
+          <li><a class="nav_link" href="#" data-section="">qwrqwrqwr</a></li>
+          <li><a class="nav_link" href="#" data-section="">qwrqwrwq</a></li>
+        </ul>
+      </div>
+
     </header>
 
     <div class="intro_content">
@@ -40,7 +51,7 @@
 
 
   <!--SECTION / HELLO-->
-  <section class="section hello">
+  <section class="section hello" data-section="hello" id="hello">
     <div class="container hello_container"></div>
   </section>
   <!--SECTION / HELLO-->
@@ -85,24 +96,22 @@
 
 
   <!--SECTION / SLIDER_BG-->
-  <section class="section slider_bg">
-    <div class="slider_bg_container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide slider_bg_img">
-          <img src="img/slider_bg/slider_bg_1.avif" alt="">
-        </div>
-        <div class="swiper-slide slider_bg_img">
-          <img src="img/slider_bg/slider_bg_2.avif" alt="">
-        </div>
-        <div class="swiper-slide slider_bg_img">
-          <img src="img/slider_bg/slider_bg_3.avif" alt="">
-        </div>
-        <div class="swiper-slide slider_bg_img">
-          <img src="img/slider_bg/slider_bg_4.avif" alt="">
-        </div>
-        <div class="swiper-slide slider_bg_img">
-          <img src="img/slider_bg/slider_bg_5.avif" alt="">
-        </div>
+  <section class="section slider_bg_container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/slider_bg/slider_bg_1.jpeg" data-swiper-parallax="20%" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/slider_bg/slider_bg_2.jpeg" data-swiper-parallax="20%" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/slider_bg/slider_bg_3.jpeg" data-swiper-parallax="20%" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/slider_bg/slider_bg_4.jpeg" data-swiper-parallax="20%" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="img/slider_bg/slider_bg_5.jpeg" data-swiper-parallax="20%" alt="">
       </div>
     </div>
   </section>
@@ -123,6 +132,7 @@
 
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/app.js"></script>
   
