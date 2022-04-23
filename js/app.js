@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   };
 
-  
+
 
 
   /* BURGER */
@@ -56,18 +56,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const navInit = ()   => {
     const links = document.querySelectorAll('.nav_link'),
           section = document.querySelectorAll('.section'),
-          intro = document.getElementById('intro');
+          header = document.querySelector('.header');
 
-    section.forEach(section => {
-      if (window.pageYOffset >= section.offsetTop) {
-        links.forEach(link => {
-          link.classList.remove('active');
-          if (link.dataset.section === section.dataset.section) {
-            link.classList.add('active');
-          }
-        })
-      };
-    })
+    if (window.innerWidth < 1023) {
+      section.forEach(section => {
+        if (window.pageYOffset + header.offsetHeight >= section.offsetTop) {
+          links.forEach(link => {
+            link.classList.remove('active');
+            if (link.dataset.section === section.dataset.section) {
+              link.classList.add('active');
+            }
+          })
+        };
+      })
+    } else {
+      section.forEach(section => {
+        if (window.pageYOffset >= section.offsetTop) {
+          links.forEach(link => {
+            link.classList.remove('active');
+            if (link.dataset.section === section.dataset.section) {
+              link.classList.add('active');
+            }
+          })
+        };
+      })
+    }
   };
   navInit();
   window.addEventListener('scroll', () => {
@@ -139,11 +152,22 @@ $(function() {
     event.preventDefault();
 
     let blockId = $(this).data('scroll'),
-        section = $('.section'),
-        blockOffset = $(blockId).offset().top;
+        header = document.querySelector('.header'),
+        section = $('.section');
 
-    $("html, body").animate ({
-      scrollTop: blockOffset
-    }, 900);
+    if ($(window).width() < 1024) {
+      let blockOffset = $(blockId).offset().top - header.offsetHeight;
+
+      $("html, body").animate ({
+        scrollTop: blockOffset
+      }, 900);
+    } else {
+      let blockOffset = $(blockId).offset().top;
+
+      $("html, body").animate ({
+        scrollTop: blockOffset
+      }, 900);
+    }
+    
   })
 })
