@@ -71,6 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
   /* SLIDER_BG */
   const swiperBg = new Swiper('.slider_bg_container', {
     loop: true,
@@ -98,6 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
+
+
+/* SCROLL */
 $(function() {
   $("[data-scroll").click(function(event) {
     event.preventDefault();

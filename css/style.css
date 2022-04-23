@@ -222,10 +222,18 @@ ul {
   background-color: #17171a;
   box-shadow: 0 0 2px #46464f inset, 0 0 4px #46464f inset, 0 0 6px #46464f inset;
 }
-
+.nav_menu.active ul {
+  transform: translateX(0%);
+  opacity: 1;
+}
 .nav_menu ul {
   width: 100%;
+  transform: translateX(20%);
+  opacity: 0;
+  transition: 1s ease;
+  transition-delay: 0.2s;
 }
+
 
 .nav_link.active{
   background-color: #656572;
