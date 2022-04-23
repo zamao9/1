@@ -74,6 +74,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  /* SLIDER_MENU */
+  const swiperMenu = new Swiper('.menu_container', {
+    loop: false,
+    speed: 1000,
+    spaceBetween: 100,
+    mousewheel: {
+      invert: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: false
+    }
+  });
+
+
+
+
+
   /* SLIDER_BG */
   const swiperBg = new Swiper('.slider_bg_container', {
     loop: true,
