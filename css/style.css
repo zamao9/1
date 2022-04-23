@@ -332,7 +332,7 @@ ul {
   display: grid;
   grid-template-columns: 290px;
   justify-content: center;
-  gap: 15px;
+  gap: 25px;
 }
 
 .menu_content {
@@ -345,6 +345,8 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-bottom: 10px;
 }
 
 .subtitle {
@@ -472,7 +474,7 @@ ul {
   bottom: 15px;
   left: 0;
 
-  padding-left: 15px;
+  padding: 0 15px;
 }
 
 .slide_title {
