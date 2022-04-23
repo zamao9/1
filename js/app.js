@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* FIXED_HEADER */
+  window.onscroll = () => {
+    const header = document.querySelector('.header'),
+          scrollY = window.scrollY;
+
+    if (scrollY > 30) {
+      header.classList.add('fixed');
+    } else if (scrollY < 30) {
+      header.classList.remove('fixed');
+    }
+
+  };
+
+  
+
+
   /* BURGER */
   let burger = document.querySelector('.burger'),
       navMenu = document.querySelector('.nav_menu'),

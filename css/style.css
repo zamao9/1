@@ -120,11 +120,18 @@ ul {
   background-color: #00000080;
 }
 
+
+.header.fixed {
+  background-color: #101216;
+  box-shadow: 0 0 2px #46464f inset, 0 0 4px #46464f inset, 0 0 6px #46464f inset;
+}
 .header {
-  position: absolute;
+  position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
+
+  transition: 0.2s ease;
 
   width: 100%;
 }
