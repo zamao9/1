@@ -326,7 +326,7 @@ ul {
   bottom: 15px;
   left: 0;
 
-  opacity: 1;
+  -webkit-opacity: 1;
   padding-left: 15px;
 }
 
@@ -471,9 +471,10 @@ ul {
 
     transition: 0.2s ease;
     cursor: pointer;
-    border-radius: 3px;
-    background-color: #656572;
-    box-shadow: 0 0 5px #fff inset;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #46464f;
+    box-shadow: 0 0 5px #fff;
   }
   .nav_link:hover::after {
     background-color: #fff;
