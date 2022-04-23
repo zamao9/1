@@ -92,6 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: true,
     parallax: true,
     allowTouchMove: false,
+    autoplay: {
+      delay: 6000,
+    },
     speed: 2000,
     breakpoints: {
       576: {
