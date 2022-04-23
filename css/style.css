@@ -125,6 +125,7 @@ ul {
 .burger {
   position: fixed;
   right: 15px;
+  top: 20px;
   z-index: 11;
 
   width: 30px;
@@ -235,7 +236,6 @@ ul {
   transition-delay: 0.2s;
 }
 
-
 .nav_link.active{
   background-color: #656572;
   box-shadow: 0 0 5px #656572;
@@ -266,7 +266,7 @@ ul {
 }
 
 .hello {
-  background-color: #534c3c;
+  background-color: #101216;
 }
 
 .menu {
@@ -274,16 +274,15 @@ ul {
 }
 
 .works {
-  background-color: #171717;
+  background-color: #101216;
 }
 
 .clients {
-  background-color: grey;
+  background-color: #101216;
 }
 
 .slider_bg {
   padding: 0;
-  background-color: #171717;
 }
 
 
@@ -316,7 +315,7 @@ ul {
   flex-direction: column;
   align-items: center;
 
-  padding: 30px 0;
+  padding: 30px 0 40px;
 }
 
 .title {
@@ -401,6 +400,10 @@ ul {
 .swiper-pagination {
   position: absolute;
   bottom: 0 !important;
+  z-index: 5 !important;
+
+  width: 100%;
+  max-width: 850px;
 
   display: flex;
   align-items: center;
@@ -507,7 +510,7 @@ ul {
   width: 100%;
 
   padding: 50px 0;
-  background-color: #171717;
+  background-color: #101216;
 }
 
 .footer_content {
