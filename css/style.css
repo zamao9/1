@@ -322,11 +322,10 @@ ul {
   width: 100%;
 
   position: absolute;
-  z-index: 5;
+  z-index: 8;
   bottom: 15px;
   left: 0;
 
-  -webkit-opacity: 1;
   padding-left: 15px;
 }
 
@@ -366,10 +365,6 @@ ul {
 
 
 @media (min-width: 576px) {
-  /* SLIDER_BG */
-  .slider_bg_container {
-  }
-
 }
 
 
