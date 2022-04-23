@@ -51,11 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         })
       };
-      if (window.pageYOffset < intro.offsetHeight) {
-        links.forEach(link => {
-          link.classList.remove('active')
-        })
-      }
     })
   };
   navInit();
@@ -84,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     pagination: {
       el: '.swiper-pagination',
-      clickable: false
+      clickable: false,
     }
   });
 
