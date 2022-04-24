@@ -433,6 +433,27 @@ ul {
   transition: 0.2s ease;
   cursor: pointer;
 }
+.subtitle_blink {
+  animation: light_blink 5s ease infinite;
+}
+@keyframes light_blink {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .text {
   font-size: 14px;
