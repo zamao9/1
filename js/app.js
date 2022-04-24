@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* PARALLAX_BG */
-
-
-
   /* FIXED_HEADER */
   window.onscroll = () => {
     const header = document.querySelector('.header'),
@@ -25,7 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
       navMenu = document.querySelector('.nav_menu'),
       navlink = document.querySelectorAll('.nav_link'),
       clickBg = document.getElementById('click_bg'),
-      body = document.getElementsByTagName('body');
+      body = document.getElementsByTagName('body'),
+      popupMenu = document.getElementById('popup_menu_img'),
+      subLink = document.querySelectorAll('.subtitle'),
+      menuImg = document.querySelectorAll('.menu_img');
 
   burger.addEventListener('click', (event) => {
     event.currentTarget.classList.toggle('active');
@@ -40,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     burger.classList.remove('active');
     navMenu.classList.remove('active');
     body[0].classList.remove('block');
+    popupMenu.classList.remove('active');
   });
 
   /* CLOSE NAV ON LINKS CLICK */
@@ -51,7 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
       burger.classList.remove('active'); 
       clickBg.classList.remove('active');
   })
+
+    /* POPUP_MENU */
+    for (let i=0; subLink.length > i; ++i) {
+      subLink[i].addEventListener('click', (event) => {
+        for (let i=0; menuImg.length > i; ++i) {
+          menuImg[i].classList.remove('active');
+        }
+        menuImg[i].classList.toggle('active');
+        popupMenu.classList.add('active');
+        body[0].classList.add('block');
+        clickBg.classList.add('active');
+      })
+    }
   };
+
+
+
+
+
 
 
 
@@ -107,12 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: false,
     speed: 1000,
     spaceBetween: 100,
-    mousewheel: {
-      invert: false
-    },
     pagination: {
       el: '.swiper-pagination',
-      clickable: false,
+      clickable: true,
     }
   });
 
