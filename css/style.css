@@ -103,7 +103,6 @@ ul {
   justify-content: center;
 
   overflow: hidden;
-
   background: url(../img/bg/bg1.webp) center no-repeat;
   background-size: cover;
 }
@@ -119,7 +118,6 @@ ul {
 
   background-color: #00000080;
 }
-
 
 .header.fixed {
   background-color: #101216;
@@ -651,14 +649,10 @@ ul {
   /* INTRO */
   .header.fixed {
     background: none;
-    box-shadow: 0;
+    box-shadow: none;
   }
   .header {
     position: absolute;
-  }
-
-  .intro {
-    background-attachment: fixed;
   }
 
   .header_content {

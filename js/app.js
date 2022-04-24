@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* PARALLAX_BG */
+
+
+
   /* FIXED_HEADER */
   window.onscroll = () => {
     const header = document.querySelector('.header'),
