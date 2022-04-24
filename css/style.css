@@ -142,7 +142,7 @@ ul {
   align-items: center;
 
   margin: 0 auto;
-  padding: 10px 15px;
+  padding: 20px 15px;
 }
 
 .logo {
@@ -161,7 +161,7 @@ ul {
 .burger {
   position: fixed;
   right: 15px;
-  top: 10px;
+  top: 20px;
   z-index: 11;
 
   width: 30px;
@@ -360,6 +360,7 @@ ul {
   font-family: 'Cormorant Garamond', serif;
   font-size: 18px;
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 .text {
@@ -482,14 +483,15 @@ ul {
   border-radius: 5px;
   padding: 5px 10px;
   margin: 0 auto;
-  background-color: #00000080;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  background-color: #10121680;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 
 .slide_title {
   font-size: 18px;
   font-weight: 400;
+  text-transform: capitalize;
 }
 
 .slide_text {
@@ -509,9 +511,9 @@ ul {
   font-weight: 200;
   border-radius: 0 0 5px 5px;
   padding: 15px 5px 5px;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
-  background-color: #00000080;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: #10121680;
 }
 .slide_prise sup {
   font-size: 11px;
