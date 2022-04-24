@@ -474,14 +474,19 @@ ul {
 }
 
 .slide_content {
-  width: 100%;
+  width: 96%;
 
   position: absolute;
   z-index: 2;
-  bottom: 15px;
-  left: 0;
+  bottom: 2%;
+  left: 2%;
 
-  padding: 0 15px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 auto;
+  background-color: #00000080;
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 
 .slide_title {
@@ -506,8 +511,8 @@ ul {
   font-weight: 200;
   border-radius: 0 0 5px 5px;
   padding: 15px 5px 5px;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   background-color: #00000080;
 }
 .slide_prise sup {
