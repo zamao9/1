@@ -142,7 +142,7 @@ ul {
   align-items: center;
 
   margin: 0 auto;
-  padding: 20px 15px;
+  padding: 10px 15px;
 }
 
 .logo {
@@ -161,7 +161,7 @@ ul {
 .burger {
   position: fixed;
   right: 15px;
-  top: 20px;
+  top: 10px;
   z-index: 11;
 
   width: 30px;
