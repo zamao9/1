@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
       body = document.getElementsByTagName('body'),
       popupMenu = document.getElementById('popup_menu_img'),
       subLink = document.querySelectorAll('.subtitle'),
-      menuImg = document.querySelectorAll('.menu_img');
+      menuImg = document.querySelectorAll('.menu_img'),
+      clickBgMenu = document.getElementById('click_bg_menu');
 
   burger.addEventListener('click', (event) => {
     event.currentTarget.classList.toggle('active');
@@ -39,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     burger.classList.remove('active');
     navMenu.classList.remove('active');
     body[0].classList.remove('block');
-    popupMenu.classList.remove('active');
   });
 
   /* CLOSE NAV ON LINKS CLICK */
@@ -61,9 +61,14 @@ document.addEventListener('DOMContentLoaded', () => {
         menuImg[i].classList.toggle('active');
         popupMenu.classList.add('active');
         body[0].classList.add('block');
-        clickBg.classList.add('active');
+        clickBgMenu.classList.add('active');
       })
-    }
+    };
+    clickBgMenu.addEventListener('click', () => {
+      event.currentTarget.classList.remove('active');
+      popupMenu.classList.remove('active');
+      body[0].classList.remove('block');
+    })
   };
 
 

@@ -305,6 +305,25 @@ ul {
 
 
 /* SLIDER_MENU */
+.click_bg_menu.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.click_bg_menu {
+  width: 100%;
+  height: 100000vh;
+
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+  background-color: #00000066;
+}
+
 .popup_menu_img.active {
   opacity: 1;
   pointer-events: auto;
@@ -700,10 +719,6 @@ ul {
 
 @media (min-width: 992px) {
   /* INTRO */
-  .click_bg {
-    z-index: 20;
-  }
-
   .header.fixed {
     background: none;
     box-shadow: none;
