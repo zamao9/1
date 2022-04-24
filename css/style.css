@@ -439,18 +439,23 @@ ul {
 @keyframes light_blink {
   0% {
     opacity: 1;
+    text-shadow: 0 0 5px #fff;
   }
   25% {
-    opacity: 0.5;
+    opacity: 0.2;
+    text-shadow: none;
   }
   50% {
     opacity: 1;
+    text-shadow: 0 0 5px #fff;
   }
   75% {
-    opacity: 0.5;
+    opacity: 0.2;
+    text-shadow: none;
   }
   100% {
     opacity: 1;
+    text-shadow: 0 0 5px #fff;
   }
 }
 
