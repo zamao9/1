@@ -598,10 +598,9 @@ ul {
 
 .footer_icons {
   width: 100%;
-  max-width: 120px;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
   margin: 0 auto;
@@ -614,6 +613,7 @@ ul {
   text-align: center;
   color: #fff;
 
+  margin:  0 5px;
   transition: 0.2s ease;
 }
 
