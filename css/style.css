@@ -497,13 +497,18 @@ ul {
 .slide_prise {
   position: absolute;
   z-index: 1;
-  top: 15px;
-  right: 30px;
+  top: 0;
+  right: 10px;
 
   color: #fff;
   font-size: 15px;
   text-shadow: 0 0 3px #fff;
   font-weight: 200;
+  border-radius: 0 0 5px 5px;
+  padding: 15px 5px 5px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  background-color: #00000080;
 }
 .slide_prise sup {
   font-size: 11px;
