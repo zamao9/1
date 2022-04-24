@@ -347,6 +347,7 @@ ul {
   background-color: #10121680;
   box-shadow: 0 0 2px #46464f inset, 0 0 4px #46464f inset, 0 0 6px #46464f inset;
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   padding: 30px;
 }
 
@@ -500,6 +501,9 @@ ul {
   background: #46464f !important;
   box-shadow: 0 0 3px #fff inset !important;
   opacity: 1 !important;
+}
+.swiper-pagination-bullet:focus {
+  outline: none;
 }
 .swiper-pagination-bullet-active {
   background: #fff !important;
