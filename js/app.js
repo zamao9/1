@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (window.innerWidth < 1023) {
       section.forEach(section => {
-        if (window.pageYOffset + header.offsetHeight >= section.offsetTop) {
+        if (window.pageYOffset + header.offsetHeight + 50 >= section.offsetTop) {
           links.forEach(link => {
             link.classList.remove('active');
             if (link.dataset.section === section.dataset.section) {
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     } else {
       section.forEach(section => {
-        if (window.pageYOffset >= section.offsetTop) {
+        if (window.pageYOffset + 200 >= section.offsetTop) {
           links.forEach(link => {
             link.classList.remove('active');
             if (link.dataset.section === section.dataset.section) {
