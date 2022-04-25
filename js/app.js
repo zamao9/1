@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       body[0].classList.remove('block');
       burger.classList.remove('active'); 
       clickBg.classList.remove('active');
-  })
+  });
 
     /* POPUP_MENU */
     for (let i=0; starterSub.length > i; ++i) {
@@ -174,9 +174,8 @@ document.addEventListener('DOMContentLoaded', () => {
     speed: 1000,
     parallax: true,
     pagination: {
-      el: '.swiper-pagination-place',
-      type: 'fraction',
-      clickable: false
+      el: '.swiper-pagination_place .swiper-pagination',
+      clickable: true
     }
   });
 
@@ -188,8 +187,8 @@ document.addEventListener('DOMContentLoaded', () => {
     spaceBetween: 100,
     autoHeight: true,
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+      el: '.swiper-pagination_menu .swiper-pagination',
+      clickable: true
     }
   });
 

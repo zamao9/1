@@ -345,7 +345,7 @@ ul {
   position: relative;
 
   padding: 0;
-  margin: 0 auto5px;
+  margin: 0 auto 30px;
 }
 
 .place_slide {
@@ -365,26 +365,39 @@ ul {
   display: block;
 }
 
-.swiper-pagination-place {
-  position: relative;
-  z-index: 1;
-  bottom: 97% !important;
+.swiper-pagination_place .swiper-pagination {
+  position: static !important;
 
-  width: 95% !important;
+  width: 100% !important;
+  max-width: 650px;
 
   display: flex;
   align-items: center;
   justify-content: flex-end;
 
+  height: 15px;
+
   text-align: right !important;
-  font-size: 13px;
-  text-shadow: 0 0 3px #fff;
-  font-weight: 300;
-  color: #fff;
-  
+  padding: 0 15px;
   margin: 0 auto;
   opacity: 1;
+}
 
+.swiper-pagination_place .swiper-pagination-bullet {
+  width: 15px !important;
+  height: 7px !important;
+
+  border-radius: 5px !important;
+  background: #46464f !important;
+  box-shadow: 0 0 3px #fff inset !important;
+  opacity: 1 !important;
+}
+.swiper-pagination_place .swiper-pagination-bullet:focus {
+  outline: none;
+}
+.swiper-pagination_place .swiper-pagination-bullet-active {
+  background: #fff !important;
+  box-shadow: 0 0 3px #fff !important;
 }
 
 
@@ -470,14 +483,13 @@ ul {
 
   overflow: hidden;
   padding: 0 15px;
+  margin-bottom: 30px;
 }
 
 .slide_menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 30px 0 40px;
 }
 
 .title {
@@ -592,7 +604,7 @@ ul {
   font-size: 11px;
 }
 
-.swiper-pagination {
+.swiper-pagination_menu .swiper-pagination {
   position: static !important;
 
   width: 100% !important;
@@ -609,7 +621,7 @@ ul {
   opacity: 1;
 }
 
-.swiper-pagination-bullet {
+.swiper-pagination_menu .swiper-pagination-bullet {
   width: 15px !important;
   height: 7px !important;
 
@@ -618,10 +630,10 @@ ul {
   box-shadow: 0 0 3px #fff inset !important;
   opacity: 1 !important;
 }
-.swiper-pagination-bullet:focus {
+.swiper-pagination_menu .swiper-pagination-bullet:focus {
   outline: none;
 }
-.swiper-pagination-bullet-active {
+.swiper-pagination_menu .swiper-pagination-bullet-active {
   background: #fff !important;
   box-shadow: 0 0 3px #fff !important;
 }
@@ -824,15 +836,22 @@ ul {
 
 
 @media (min-width: 768px) {
+  /* PLACE */
+  .swiper-pagination_place .swiper-pagination {
+    padding: 0;
+  }  
+
   /* MENU */
   .slide_menu_items {
     gap: 15px 50px;
     grid-template-columns: repeat(2, 300px);
   }
 
-  .swiper-pagination {
+  .swiper-pagination_menu .swiper-pagination {
     max-width: 650px;
   }
+
+  
 
 }
 
@@ -961,9 +980,9 @@ ul {
 
 
   /* MENU */
- .subtitle:hover {
+  .subtitle:hover {
    opacity: 0.5;
- }
+  }
 
 
   /* FOOTER */
