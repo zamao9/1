@@ -372,6 +372,9 @@ ul {
   object-fit: cover;
 }
 
+.menu_drink img {
+  object-fit: contain;
+}
 
 .menu_container {
   position: relative;
@@ -458,7 +461,6 @@ ul {
     text-shadow: 0 0 5px #fff;
   }
 }
-
 
 .text {
   font-size: 14px;

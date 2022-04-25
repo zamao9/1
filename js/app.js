@@ -14,7 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
 
-
+  
+  
 
   /* BURGER */
   let burger = document.querySelector('.burger'),
@@ -23,8 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
       clickBg = document.getElementById('click_bg'),
       body = document.getElementsByTagName('body'),
       popupMenu = document.getElementById('popup_menu_img'),
-      subLink = document.querySelectorAll('.subtitle'),
       menuImg = document.querySelectorAll('.menu_img'),
+      starterSub = document.querySelectorAll('.starter_subtitle'),
+      starterImg = document.querySelectorAll('.menu_starter'),
+      mainSub = document.querySelectorAll('.main_subtitle'),
+      mainImg = document.querySelectorAll('.menu_main'),
+      dessertSub = document.querySelectorAll('.dessert_subtitle'),
+      dessertImg = document.querySelectorAll('.menu_dessert'),
+      drinkSub = document.querySelectorAll('.drink_subtitle'),
+      drinkImg = document.querySelectorAll('.menu_drink'),
       clickBgMenu = document.getElementById('click_bg_menu');
 
   burger.addEventListener('click', (event) => {
@@ -53,30 +61,65 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
     /* POPUP_MENU */
-    for (let i=0; subLink.length > i; ++i) {
-      subLink[i].addEventListener('click', (event) => {
-        for (let i=0; menuImg.length > i; ++i) {
-          menuImg[i].classList.remove('active');
+    for (let i=0; starterSub.length > i; ++i) {
+      starterSub[i].addEventListener('click', (event) => {
+        for (let i=0; starterImg.length > i; ++i) {
+          starterImg[i].classList.remove('active');
         }
-        menuImg[i].classList.toggle('active');
+        starterImg[i].classList.toggle('active');
         popupMenu.classList.add('active');
         body[0].classList.add('block');
         clickBgMenu.classList.add('active');
       })
     };
+
+    for (let i=0; mainSub.length > i; ++i) {
+      mainSub[i].addEventListener('click', (event) => {
+        for (let i=0; mainImg.length > i; ++i) {
+          mainImg[i].classList.remove('active');
+        }
+        mainImg[i].classList.toggle('active');
+        popupMenu.classList.add('active');
+        body[0].classList.add('block');
+        clickBgMenu.classList.add('active');
+      })
+    };
+    
+    for (let i=0; dessertSub.length > i; ++i) {
+      dessertSub[i].addEventListener('click', (event) => {
+        for (let i=0; dessertImg.length > i; ++i) {
+          dessertImg[i].classList.remove('active');
+        }
+        dessertImg[i].classList.toggle('active');
+        popupMenu.classList.add('active');
+        body[0].classList.add('block');
+        clickBgMenu.classList.add('active');
+      })
+    };
+
+    for (let i=0; drinkSub.length > i; ++i) {
+      drinkSub[i].addEventListener('click', (event) => {
+        for (let i=0; drinkImg.length > i; ++i) {
+          drinkImg[i].classList.remove('active');
+        }
+        drinkImg[i].classList.toggle('active');
+        popupMenu.classList.add('active');
+        body[0].classList.add('block');
+        clickBgMenu.classList.add('active');
+      })
+    };
+    
     clickBgMenu.addEventListener('click', () => {
+      for (let i=0; menuImg.length > i; ++i) {
+        menuImg[i].classList.remove('active');
+      }
       event.currentTarget.classList.remove('active');
       popupMenu.classList.remove('active');
       body[0].classList.remove('block');
-    })
+    });
   };
 
-
-
-
-
-
-
+  
 
 
   /* LINKS */
