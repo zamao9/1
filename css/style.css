@@ -155,9 +155,7 @@ ul {
   color: #fff;
   text-shadow: 0 0 3px #fff;
 }
-.burger.active {
-  transform: rotate(90deg);
-}
+
 .burger {
   position: fixed;
   right: 15px;
@@ -184,8 +182,7 @@ ul {
   width: 80%;
   height: 2px;
 
-  transition: 0.2s ease;
-  transition-delay: 0.2s;
+  transition: 0.4s ease;
   background-color: #fff;
   box-shadow: 0 0 3px #fff;
 }
@@ -199,27 +196,70 @@ ul {
   width: 100%;
   height: 2px;
 
-  transition: 0.2s ease;
-  transition-delay: 0.2s;
+  transition: 0.4s ease;
   background-color: #fff;
   box-shadow: 0 0 3px #fff;
 }
 
 .burger.active 
 .burger_items::before {
-  top: 0;
-  transform: rotate(45deg);
+  left: 100%;
+  background: none;
+  box-shadow: none;
 }
 .burger_items::before {
   top: 8px;
 }
 .burger.active 
 .burger_items::after {
-  top: 0;
-  transform: rotate(-45deg);
+  left: -100%;
+  background: none;
+  box-shadow: none;
 }
 .burger_items::after {
   top: -8px;
+}
+
+.burger_items2 {
+  width: 80%;
+  position: relative;
+  width: 100%;
+  height: 2px;
+
+  background: none;
+}
+
+.burger_items2::before,
+.burger_items2::after {
+  position: absolute;
+  content: '';
+
+  width: 100%;
+  height: 2px;
+
+  transition: 0.4s ease;
+  background-color: #fff;
+  box-shadow: 0 0 3px #fff;
+}
+
+.burger.active 
+.burger_items2::before {
+  transform: translate(0) rotate(45deg);
+  opacity: 1;
+}
+.burger_items2::before {
+  opacity: 0;
+  transform: translate(-25px, -25px) rotate(45deg);
+}
+
+.burger.active 
+.burger_items2::after {
+  transform: translate(0) rotate(-45deg);
+  opacity: 1;
+}
+.burger_items2::after {
+  opacity: 0;
+  transform: translate(25px, -25px) rotate(-45deg);
 }
 
 .intro_content {
