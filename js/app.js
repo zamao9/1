@@ -173,6 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loop: false,
     speed: 1000,
     spaceBetween: 100,
+    autoHeight: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
