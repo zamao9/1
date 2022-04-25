@@ -168,6 +168,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  /* SLIDER_PLACE */
+  const swiperPlace = new Swiper('.place_container', {
+    loop: true,
+    speed: 1000,
+    parallax: true,
+    pagination: {
+      el: '.swiper-pagination-place',
+      type: 'fraction',
+      clickable: false
+    }
+  });
+
+
   /* SLIDER_MENU */
   const swiperMenu = new Swiper('.menu_container', {
     loop: false,
@@ -179,9 +192,6 @@ document.addEventListener('DOMContentLoaded', () => {
       clickable: true,
     }
   });
-
-
-
 
 
   /* SLIDER_BG */
