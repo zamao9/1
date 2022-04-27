@@ -10,12 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (scrollY < 30) {
       header.classList.remove('fixed');
     }
-
   };
-
-
-  
-  
 
   /* BURGER */
   let burger = document.querySelector('.burger'),
@@ -35,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       drinkImg = document.querySelectorAll('.menu_drink'),
       clickBgMenu = document.getElementById('click_bg_menu');
 
-  burger.addEventListener('click', (event) => {
+      burger.addEventListener('click', (event) => {
     event.currentTarget.classList.toggle('active');
     navMenu.classList.toggle('active');
     body[0].classList.toggle('block');
@@ -72,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
         clickBgMenu.classList.add('active');
       })
     };
-
     for (let i=0; mainSub.length > i; ++i) {
       mainSub[i].addEventListener('click', (event) => {
         for (let i=0; mainImg.length > i; ++i) {
@@ -84,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         clickBgMenu.classList.add('active');
       })
     };
-    
     for (let i=0; dessertSub.length > i; ++i) {
       dessertSub[i].addEventListener('click', (event) => {
         for (let i=0; dessertImg.length > i; ++i) {
@@ -96,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
         clickBgMenu.classList.add('active');
       })
     };
-
     for (let i=0; drinkSub.length > i; ++i) {
       drinkSub[i].addEventListener('click', (event) => {
         for (let i=0; drinkImg.length > i; ++i) {
@@ -119,15 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  
-
-
   /* LINKS */
   const navInit = ()   => {
     const links = document.querySelectorAll('.nav_link'),
           section = document.querySelectorAll('.section'),
           header = document.querySelector('.header');
-
     if (window.innerWidth < 1023) {
       section.forEach(section => {
         if (window.pageYOffset + header.offsetHeight + 50 >= section.offsetTop) {
@@ -160,14 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
     navInit();
   });
 
-
-
-
-
-
-
-
-
   /* SLIDER_PLACE */
   const swiperPlace = new Swiper('.place_container', {
     loop: true,
@@ -178,7 +158,6 @@ document.addEventListener('DOMContentLoaded', () => {
       clickable: true
     }
   });
-
 
   /* SLIDER_MENU */
   const swiperMenu = new Swiper('.menu_container', {
@@ -191,7 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
       clickable: true
     }
   });
-
 
   /* SLIDER_BG */
   const swiperBg = new Swiper('.slider_bg_container', {
@@ -218,37 +196,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-
-
-
   /* AOS */
   AOS.init({
-  disable: false,
-  startEvent: 'DOMContentLoaded',
-  initClassName: 'aos-init',
-  animatedClassName: 'aos-animate',
-  useClassNames: false,
-  disableMutationObserver: false,
-  debounceDelay: 50, 
-  throttleDelay: 99, 
-  
-  offset: 0, 
-  delay: 0,
-  duration: 1000,
-  easing: 'ease', 
-  once: false,
-  mirror: false, 
-  anchorPlacement: 'top-center',
+    disable: false,
+    startEvent: 'DOMContentLoaded',
+    initClassName: 'aos-init',
+    animatedClassName: 'aos-animate',
+    useClassNames: false,
+    disableMutationObserver: false,
+    debounceDelay: 50, 
+    throttleDelay: 99, 
+    
+    offset: 0, 
+    delay: 0,
+    duration: 1000,
+    easing: 'ease', 
+    once: false,
+    mirror: false, 
+    anchorPlacement: 'top-center',
+  });
 });
-
-
-
-
-
-});
-
-
-
 
 /* SCROLL */
 $(function() {
@@ -272,6 +239,5 @@ $(function() {
         scrollTop: blockOffset
       }, 900);
     }
-    
   })
 })
