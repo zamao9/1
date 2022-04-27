@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     offset: 0, 
     delay: 0,
-    duration: 1000,
+    duration: 500,
     easing: 'ease', 
     once: false,
     mirror: false, 
