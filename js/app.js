@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
   easing: 'ease', 
   once: false,
   mirror: false, 
-  anchorPlacement: 'bottom-center',
+  anchorPlacement: 'top-center',
 });
 
 
