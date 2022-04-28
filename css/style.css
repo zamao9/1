@@ -1017,7 +1017,7 @@ ul {
     margin: 0 auto 15px !important;
   }
   .swiper_menu_prev {
-    width: 100px !important;
+    width: 90px !important;
     height: 30px !important;
 
     position: static !important;
@@ -1051,7 +1051,7 @@ ul {
     background-color: #ffffff80;
   }
   .swiper_menu_next {
-    width: 100px !important;
+    width: 90px !important;
     height: 30px !important;
 
     position: static !important;
