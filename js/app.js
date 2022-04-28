@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   /* LINKS */
-  const navInit = ()   => {
+  const navInit = () => {
     const links = document.querySelectorAll('.nav_link'),
           section = document.querySelectorAll('.section'),
           header = document.querySelector('.header');
@@ -156,9 +156,13 @@ document.addEventListener('DOMContentLoaded', () => {
     pagination: {
       el: '.swiper-pagination_place .swiper-pagination',
       clickable: true
+    },
+    navigation: {
+      prevEl: '.swiper_place_prev',
+      nextEl: '.swiper_place_next'
     }
   });
-
+  
   /* SLIDER_MENU */
   const swiperMenu = new Swiper('.menu_container', {
     loop: false,
@@ -168,6 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
     pagination: {
       el: '.swiper-pagination_menu .swiper-pagination',
       clickable: true
+    },
+    navigation: {
+      prevEl: '.swiper_menu_prev',
+      nextEl: '.swiper_menu_next'
     }
   });
 

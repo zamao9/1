@@ -308,8 +308,11 @@ ul {
 
   position: relative;
 
+  display: flex;
+  justify-content: center;
+
   padding: 0;
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
 }
 .place_slide {
   width: 100%;
@@ -326,6 +329,9 @@ ul {
   opacity: 0.7;
 
   display: block;
+}
+.slider_place_navigation {
+  display: none;
 }
 .swiper-pagination_place .swiper-pagination {
   position: static !important;
@@ -578,6 +584,9 @@ ul {
 .swiper-pagination_menu .swiper-pagination-bullet-active {
   background: #fff !important;
   box-shadow: 0 0 3px #fff !important;
+}
+.menu_navigation {
+  display: none;
 }
 
 /* SLIDER_BG */
@@ -907,12 +916,174 @@ ul {
   .place_container {
     height: 500px;
   }
+  .slider_place_navigation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+  
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    margin: 0 auto !important;
+  }
+  .swiper_place_prev {
+    width: 90px !important;
+    height: 30px !important;
+  
+    position: static !important;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    color: #fff !important;
+    letter-spacing: 5px;
+    cursor: pointer;
+  
+    transition: 0.2s ease;
+    background-color: #0f111580;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: 0 0 2px #46464f inset, 0 0 4px #46464f inset, 0 0 6px #46464f inset;
+    border-radius: 5px;
+    margin: 0 30px 5px !important;
+  }
+  .swiper_place_prev::after {
+    content: '' !important;
+  }
+  .swiper_place_prev:focus {
+    outline: none;
+  }
+  .swiper_place_prev:hover {
+    background-color: #ffffff80;
+  }
+  .swiper_place_next {
+    width: 90px !important;
+    height: 30px !important;
+  
+    position: static !important;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    color: #fff !important;
+    letter-spacing: 5px;
+    cursor: pointer;
+  
+    transition: 0.2s ease;
+    background-color: #0f111580;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: 0 0 2px #46464f inset, 0 0 4px #46464f inset, 0 0 6px #46464f inset;
+    border-radius: 5px;
+    margin: 0 30px 5px !important;
+  }
+  .swiper_place_next::after {
+    content: '' !important;
+  }
+  .swiper_place_next:focus {
+    outline: none;
+  }
+  .swiper_place_next:hover {
+    background-color: #ffffff80;
+  }
 
   /* MENU */
   .subtitle:hover {
    opacity: 0.5;
   }
+  .menu_navigation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+
+    margin: 0 auto 15px !important;
+  }
+  .swiper_menu_prev {
+    width: 100px !important;
+    height: 30px !important;
+
+    position: static !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    color: #fff !important;
+    letter-spacing: 5px;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+    background-color: #0f111580;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: 0 0 2px #46464f inset, 0 0 4px #46464f inset, 0 0 6px #46464f inset;
+    border-radius: 5px;
+    margin: 0 30px !important;
+  }
+  .swiper_menu_prev::after {
+    content: '' !important;
+  }
+  .swiper_menu_prev:focus {
+    outline: none;
+  }
+  .swiper_menu_prev:hover {
+    background-color: #ffffff80;
+  }
+  .swiper_menu_next {
+    width: 100px !important;
+    height: 30px !important;
+
+    position: static !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    color: #fff !important;
+    letter-spacing: 5px;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+    background-color: #0f111580;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    box-shadow: 0 0 2px #46464f inset, 0 0 4px #46464f inset, 0 0 6px #46464f inset;
+    border-radius: 5px;
+    margin: 0 30px !important;
+  }
+  .swiper_menu_next::after {
+    content: '' !important;
+  }
+  .swiper_menu_next:focus {
+    outline: none;
+  }
+  .swiper_menu_next:hover {
+    background-color: #ffffff80;
+  }
   /* FOOTER */
   .link_tel:hover {
     opacity: 0.5;
