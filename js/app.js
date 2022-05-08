@@ -215,13 +215,13 @@ document.addEventListener('DOMContentLoaded', () => {
     debounceDelay: 50, 
     throttleDelay: 99, 
     
-    offset: 0, 
+    offset: 100, 
     delay: 0,
     duration: 500,
     easing: 'ease', 
-    once: false,
+    once: true,
     mirror: false, 
-    anchorPlacement: 'top-center',
+    anchorPlacement: 'top-bottom',
   });
 });
 
