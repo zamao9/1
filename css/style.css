@@ -604,12 +604,12 @@ ul {
   height: 15px;
 
   text-align: right !important;
-  margin: 0 auto;
   opacity: 1;
+  padding: 0 15px;
 }
 .pagination_block_menu {
   position: relative;
-  left: 62%;
+  left: 57%;
 
   width: fit-content;
   height: 15px;
@@ -831,7 +831,7 @@ ul {
     grid-template-columns: repeat(1, 290px);
   }
   .pagination_block_menu {
-    left: 60%;
+    left: 56%;
   }
 
   /* FOOTER */
@@ -1147,7 +1147,7 @@ ul {
     background-color: #ffffff80;
   }
   .pagination_block_menu {
-    left: 73%;
+    left: 72%;
   }
 
   /* FOOTER */
@@ -1167,7 +1167,7 @@ ul {
 
   /* MENU */
   .pagination_block_menu {
-    left: 72%;
+    left: 70%;
   }
 }
 
@@ -1179,6 +1179,6 @@ ul {
 
   /* MENU */
   .pagination_block_menu {
-    left: 67%;
+    left: 65%;
   }
 }
