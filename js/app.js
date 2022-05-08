@@ -150,12 +150,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* SLIDER_PLACE */
   const swiperPlace = new Swiper('.place_container', {
-    loop: true,
+    loop: false,
     speed: 1000,
     parallax: true,
     pagination: {
       el: '.swiper-pagination_place .swiper-pagination',
-      clickable: true
+      clickable: true,
+      dynamicBullets: true,
+      dynamicMainBullets: 2
     },
     navigation: {
       prevEl: '.swiper_place_prev',
@@ -171,7 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
     autoHeight: true,
     pagination: {
       el: '.swiper-pagination_menu .swiper-pagination',
-      clickable: true
+      clickable: true,
+      dynamicBullets: true,
+      dynamicMainBullets: 1
     },
     navigation: {
       prevEl: '.swiper_menu_prev',
