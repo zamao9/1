@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     } else {
       section.forEach(section => {
-        if (window.pageYOffset + 200 >= section.offsetTop) {
+        if (window.pageYOffset + 300 >= section.offsetTop) {
           links.forEach(link => {
             link.classList.remove('active');
             if (link.dataset.section === section.dataset.section) {
@@ -241,7 +241,7 @@ $(function() {
         scrollTop: blockOffset
       }, 900);
     } else {
-      let blockOffset = $(blockId).offset().top;
+      let blockOffset = $(blockId).offset().top - 50;
 
       $("html, body").animate ({
         scrollTop: blockOffset
